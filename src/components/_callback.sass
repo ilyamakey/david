@@ -1,0 +1,39 @@
+.callback
+  background-color: $bg-form
+  &__heading
+    margin-top: 50px
+    @extend %heading
+    +text($_32, $heading-hero)
+    text-align: center
+  &__p
+    font-family: $optional
+    font-weight: normal
+    +text($_17, $contacts-light)
+    text-align: justify
+    @media screen and (min-width: 576px)
+      text-align: center
+  &__form
+    display: block
+    width: 290px
+    margin: 50px auto 0px
+    @media screen and (min-width: 768px)
+      width: 500px
+    @media screen and (min-width: 992px)
+      width: auto
+    &__input
+      width: 100%
+      padding: 15px
+      margin-bottom: 15px
+      font-family: $optional
+      font-weight: normal
+      +text($_14, $input-color)
+      border: 1px solid $input-border
+      @media screen and (min-width: 768)
+        font-size: $_18
+  &__btn
+    display: block
+    width: 290px
+    margin: 10px auto 60px
+    +text($_18, $primary-color)
+    border-color: $heading-hero
+    background-color: $heading-hero

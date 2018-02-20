@@ -1,0 +1,21 @@
+<svg id="arrow-left" data-name="arrow-left" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #63b945;
+      }
+
+      .cls-1 {
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M131,1753.55L117.1,1766l13.9,12.45" transform="translate(-91.5 -1732.5)"/>
+  <circle class="cls-1" cx="33.5" cy="33.5" r="33"/>
+</svg>

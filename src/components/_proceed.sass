@@ -1,0 +1,30 @@
+.proceed
+  background-color: $proceed-bg
+  &__heading
+    margin-top: 50px
+    @extend %heading
+    +text($_30, $bg-about)
+    text-align: center
+    @media screen and (min-width: 1200px)
+      margin-top: 80px
+    &--secondary
+      +text($_19, $secondary-color)
+      font-weight: bold
+      text-align: center
+  &__p
+    font-family: $optional
+    font-weight: normal
+    +text($_16, $secondary-color)
+    text-align: justify
+    @media screen and (min-width: 768px)
+      text-align: center
+    &--last
+      margin-bottom: 50px
+  &__action-line
+    width: 90%
+    height: 60px
+    margin: 0px auto 50px
+    background: url(/pics/icons/numeric-line.png) no-repeat center
+    background-size: contain
+    @media screen and (min-width: 1200px)
+      margin-bottom: 80px

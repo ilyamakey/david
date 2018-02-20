@@ -1,0 +1,35 @@
+.contacts
+  background-color: $bg-light
+  &__heading
+    margin-top: 50px
+    +text($_24, $contacts-primary)
+    @extend %heading
+    text-align: center
+    @media screen and (min-width: 992px)
+      margin-top: 70px
+  &__p
+    font-family: $optional
+    +text($_17, $contacts-light)
+    text-align: justify
+    @media screen and (min-width: 576px)
+      text-align: center
+    @media screen and (min-width: 992px)
+      margin-bottom: 40px
+  &__addr__heading
+    font-family: $optional
+    font-weight: normal
+    +text($_20, $contacts-secondary)
+    text-align: center
+  &__addr__p
+    +text($_16, $contacts-secondary)
+    font-family: $optional
+    font-weight: normal
+    text-align: center
+  &__btn
+    display: block
+    width: 290px
+    margin: 40px auto
+    font-family: $optional
+    @extend %heading
+    color: $contacts-primary
+    border-color: $contacts-primary

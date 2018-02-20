@@ -1,0 +1,64 @@
+.reasons
+  background: url(/pics/reasons-bg-lg.jpg) center/cover no-repeat #2f2923
+  &__heading-primary
+    margin-top: 50px
+    margin-bottom: 30px
+    +text($_32, $reasons-primary)
+    @extend %heading
+    text-align: center
+  &__heading-optional
+    font-family: $optional
+    +text($_16, $primary-color)
+    @extend %heading
+    text-align: center
+  &__heading-secondary
+    margin-top: 30px
+    +text($_24, $heading-hero)
+    @extend %heading
+    text-align: center
+  &__notice
+    +text($_48, $heading-hero)
+  &__p
+    margin-bottom: 50px
+    font-family: $optional
+    font-weight: normal
+    +text($_15, $primary-color)
+    text-align: justify
+    @media screen and (min-width: 576px)
+      text-align: center
+  &__info
+    margin-bottom: 50px
+    @media screen and (min-width: 1200px)
+      margin-bottom: 20px
+    &__pic
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0px auto 10px
+      width: 156px
+      height: 165px
+      &--work
+        background: url(/pics/icons/icons-sprite.png) no-repeat -186px -85px
+      &--tv
+        background: url(/pics/icons/icons-sprite.png) no-repeat -535px -85px
+      &--pc
+        background: url(/pics/icons/icons-sprite.png) no-repeat -360px -85px
+      &--food
+        background: url(/pics/icons/icons-sprite.png) no-repeat -710px -85px
+      &--car
+        background: url(/pics/icons/icons-sprite.png) no-repeat -11px -85px
+    &__text
+      margin-top: 25px
+      text-align: center
+      font-family: $optional
+      +text($_50, $heading-hero)
+      @extend %heading
+      line-height: 30px
+      &--smaller
+        font-weight: normal
+        +text($_17, $heading-hero)
+    &__legend
+      font-family: $optional
+      font-weight: normal
+      +text($_22, $heading-hero)
+      text-align: center

@@ -1,0 +1,40 @@
+.navigation
+  display: flex
+  padding: 20px 0px
+  font-size: $_14
+  text-transform: uppercase
+  text-align: left
+  @media screen and (max-width: 1199px)
+    padding: 0px 0px 20px
+  @media screen and (max-width: 890px)
+    font-size: $_13
+  @media screen and (max-width: 767px)
+    padding: 0
+    flex-direction: column
+    font-size: $_14
+  &__toggle
+    padding: 5px
+    font-size: $_18
+    font-weight: bold
+    border-left: none
+    border-right: none
+    border-top: 1px dotted $secondary-color
+    border-bottom: 1px solid $secondary-color
+    border-radius: 5px
+    background-color: transparent
+  &__link
+    display: flex
+    text-decoration: none
+    color: $secondary-color
+    @media screen and (max-width: 767px)
+      margin-bottom: 10px
+    &::before
+      content: '\00B7'
+      display: inline-block
+      margin: 0px 5px
+      font-weight: bold
+      @media screen and (max-width: 767px)
+        content: none
+    &:first-child
+      &::before
+        content: none

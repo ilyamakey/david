@@ -1,0 +1,56 @@
+.hero
+  background-color: $bg-hero
+  @media screen and (min-width: 576px)
+    background: url(/pics/hero_lg.jpg) no-repeat 30%/cover $bg-hero
+  @media screen and (min-width: 992px)
+    background: url(/pics/hero_lg.jpg) no-repeat 50%/cover $bg-hero
+  @media screen and (min-width: 1500px)
+    background: url(/pics/hero_lg.jpg) no-repeat right/contain $bg-hero
+  &__heading
+    margin-top: 50px
+    +text($_24, $heading_hero)
+    @extend %heading
+    text-align: center
+    @media screen and (min-width: 600px)
+      +text($_28, $heading_hero)
+    @media screen and (min-width: 768px)
+      margin-top: 80px
+    @media screen and (min-width: 992px)
+      margin-top: 100px
+      margin-bottom: 40px
+      text-align: left
+    @media screen and (min-width: 1200px)
+      margin-bottom: 70px
+  &__p
+    margin-bottom: 20px
+    font-family: $optional
+    font-weight: normal
+    +text($_19, $secondary-color)
+    text-align: justify
+    @media screen and (min-width: 992px)
+      margin-bottom: 40px
+  &__btn
+    display: block
+    width: 290px
+    margin: 0px auto 20px
+    color: $bg-about
+    border-color: $bg-about
+    @media screen and (min-width: 768px)
+      display: inline-block
+      width: auto
+      margin-right: 30px
+    &:last-child
+      margin-bottom: 50px
+      @media screen and (min-width: 768px)
+        margin-bottom: 80px
+      @media screen and (min-width: 1200px)
+        margin-bottom: 20%
+    &--primary
+      margin-top: 30px
+      color: $primary-color
+      background-color: $bg-about
+      @media screen and (min-width: 576px)
+        margin-top: 50px
+      @media screen and (min-width: 768px)
+        margin-top: 60px
+        width: 170px

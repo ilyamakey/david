@@ -1,0 +1,37 @@
+.cases
+  &__heading
+    margin-top: 50px
+    @extend %heading
+    +text($_30, $heading-hero)
+    text-align: center
+    @media screen and (min-width: 576px)
+      margin-bottom: 50px
+  &__img
+    max-width: 100%
+    height: auto
+    margin-bottom: 20px
+    &--last
+      margin-bottom: 50px
+  &__info
+    display: flex
+    flex-direction: column
+    &__num
+      margin-bottom: -130px
+      @extend %heading
+      +text($_160, $cases-num)
+      @media screen and (min-width: 768px)
+        font-size: $_200
+    &__heading
+      font-family: $optional
+      font-weight: normal
+      +text($_30, $cases-color)
+    &__p
+      font-family: $optional
+      font-weight: normal
+      +text($_15, $cases-color)
+      text-align: justify
+    &__link
+      text-decoration: none
+      +text($_15, $cases-color)
+      font-family: $optional
+      font-weight: bold

@@ -1,0 +1,41 @@
+.programm
+  &__heading
+    margin-top: 50px
+    +text($_28, $heading-hero)
+    @extend %heading
+    text-align: center
+    @media screen and (min-width: 576px)
+      font-size: $_32
+    @media screen and (min-width: 992px)
+      margin-top: 60px
+  &__p
+    margin-bottom: 50px
+    font-family: $optional
+    font-weight: normal
+    +text($_19, $secondary-color)
+    text-align: justify
+    @media screen and (min-width: 992px)
+      text-align: center
+    &__smaller
+      +text($_15, $secondary-color)
+  &__options
+    margin-top: 30px
+    margin-bottom: 0px
+    padding: 0
+    list-style: none
+    font-family: $optional
+    +text($_15, $secondary-color)
+    @media screen and (min-width: 992px)
+      margin-top: 40px
+      margin-bottom: 45px
+    &__item
+      display: flex
+      margin-bottom: 10px
+      text-align: justify
+      &::before
+        content: '✓'
+        display: inline-block
+        margin-right: 10px
+        color: $heading-hero
+        font-weight: bold
+        font-size: 20px

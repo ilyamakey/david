@@ -1,0 +1,32 @@
+.slider
+  display: flex
+  align-items: center
+  justify-content: center
+  &__button
+    border: 0
+    background-color: transparent
+    cursor: pointer
+    &--back
+      margin-right: 3%
+    &--forward
+      margin-left: 3%
+  &__slide
+    position: relative
+  &__img
+    width: 100%
+    height: auto
+  &__pagination
+    display: flex
+    position: absolute
+    width: 84px
+    bottom: 20px
+    left: 50%
+    margin-left: -42px
+    &__item
+      width: 18px
+      height: 18px
+      margin: 0px 5px
+      background-image: url(/pics/icons/icons-sprite.png)
+      background-position: -918px -85px
+      &--active
+        background-position: -883px -85px

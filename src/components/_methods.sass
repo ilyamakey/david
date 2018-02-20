@@ -1,0 +1,24 @@
+.methods
+  &__heading
+    margin: 50px auto 30px
+    @extend %heading
+    +text($_30, $heading-hero)
+    text-align: center
+    @media screen and (min-width: 960px)
+      margin: 80px auto 50px
+    &--secondary
+    font-family: $optional
+    font-weight: bold
+    +text($_20, $cases-color)
+    text-align: center
+  &__p
+    margin-bottom: 50px
+    font-family: $optional
+    font-weight: normal
+    +text($_16, $cases-color)
+    text-align: justify
+    &--last
+      margin-bottom: 80px
+  &__icon
+    width: 116px
+    margin: auto
